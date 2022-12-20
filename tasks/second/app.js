@@ -1,37 +1,35 @@
 function countSpecialKeys(obj) {
 	let objKeys = Object.keys(obj);
-	let mass = [];
+	let firstTempArray = [];
 	objKeys.forEach((key) => {
 		if (key.length % 2 === 0) {
-			mass.push(key);
+			firstTempArray.push(key);
 		}
 	});
-	return mass;
 
-	let mass = [];
+	let secondTempArray = [];
 	for (const key in obj) {
 		if (key.length % 2 === 0) {
-			mass.push(key);
+			secondTempArray.push(key);
 		}
 	}
-	return mass;
 
-	let mass = [];
+	let thirdTempArray = [];
 	for (const [key] of Object.entries(obj)) {
 		if (key.length % 2 === 0) {
-			mass.push(key);
+			thirdTempArray.push(key);
 		}
 	}
-	return mass;
 
 	let allKeys = Object.getOwnPropertyNames(obj);
-	let mass = [];
+	let fourthTempArray = [];
 	for (const key of allKeys) {
 		if (key.length % 2 === 0) {
-			mass.push(key);
+			fourthTempArray.push(key);
 		}
 	}
-	return mass;
+
+	return [fourthTempArray, secondTempArray, thirdTempArray, fourthTempArray];
 }
 
 const obj = {
