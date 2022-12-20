@@ -21,15 +21,7 @@ function countSpecialKeys(obj) {
 		}
 	}
 
-	let allKeys = Object.getOwnPropertyNames(obj);
-	let fourthTempArray = [];
-	for (const key of allKeys) {
-		if (key.length % 2 === 0) {
-			fourthTempArray.push(key);
-		}
-	}
-
-	return [fourthTempArray, secondTempArray, thirdTempArray, fourthTempArray];
+	return [fourthTempArray, secondTempArray, thirdTempArray];
 }
 
 const obj = {
