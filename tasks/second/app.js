@@ -39,5 +39,3 @@ const obj = {
 	notok: 'notdata',
 	okok: 'data',
 };
-
-console.log(countSpecialKeys(obj));
