@@ -21,7 +21,7 @@ function countSpecialKeys(obj) {
 		}
 	}
 
-	return [fourthTempArray, secondTempArray, thirdTempArray];
+	return [firstTempArray, secondTempArray, thirdTempArray];
 }
 
 const obj = {
